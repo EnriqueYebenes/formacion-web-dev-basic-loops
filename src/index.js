@@ -170,21 +170,23 @@ function howManyTimes(arrayWords, wordSearch) {
     if (arrayWords.length === 0) {
         return 0
     }
-    console.log(arrayWords)
+
     let wordAmmount = 0
-    for (let index = 0; index < arrayWords.length; index++) {
+    for (let i = 0; i < arrayWords.length; i++) {
         if (arrayWords[i] === wordSearch) {
-            wordAmmount = arrayWords[i] + 1
+            wordAmmount = wordAmmount + 1
 
         }
 
     }
     return wordAmmount
 
+
 }
 
 
 // Iteration #8: Bonus - greatestProduct — Calcula el mayor producto de 4 números adyacentes en la matriz (horizontal y vertical)
 function greatestProduct(matrix) {
-
+    console.log(matrix)
+    return (matrix.length * matrix.height)
 }
