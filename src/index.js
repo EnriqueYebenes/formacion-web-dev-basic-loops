@@ -154,20 +154,32 @@ function doesWordExist(arrayWord, search) {
     if (arrayWord.length === 0) {
         return null
     }
-    if (arrayWord.includes(search)) {
-        return true
+
+    let wordExist = false
+    for (let i = 0; i < arrayWord.length; i++) {
+        if (arrayWord[i].includes(search)) {
+            wordExist = arrayWord[i].includes(search)
+        }
     }
-    else {
-        return false
-    }
-
-
-
+    return wordExist
 }
 
 
 // Iteration #7: Count repetition — Cuenta cuántas veces aparece una palabra en un array (0 para array vacío)
 function howManyTimes(arrayWords, wordSearch) {
+    if (arrayWords.length === 0) {
+        return 0
+    }
+    console.log(arrayWords)
+    let wordAmmount = 0
+    for (let index = 0; index < arrayWords.length; index++) {
+        if (arrayWords[i] === wordSearch) {
+            wordAmmount = arrayWords[i] + 1
+
+        }
+
+    }
+    return wordAmmount
 
 }
 
